@@ -5,11 +5,8 @@ define("HASHTAG","petertest");
 
 //twitter
 define("CONSUMER_KEY","");
-
 define("CONSUMER_SECRET","");
-
 define("ACCESS_TOKEN","");
-
 define("ACCESS_TOKEN_SECRET","");
 
 //Instagram
@@ -34,7 +31,8 @@ function getSociales(){
 
 	$tweet   = new TwitterOAuth(CONSUMER_KEY,CONSUMER_SECRET,ACCESS_TOKEN,ACCESS_TOKEN_SECRET);
 	$exclude = '-filter:retweets';//no retweets
-	$params  = array('q' =>'#'.HASHTAG.$exclude);
+	//$params  = array('q' =>'#'.HASHTAG.$exclude);
+	//$params  = array('from' => HASHTAG);
 	$results =  $tweet->get('search/tweets',$params);
 
 	foreach ($results->statuses as $key){
