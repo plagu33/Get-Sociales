@@ -14,6 +14,7 @@ define("ACCESS_TOKEN_SECRET","");
 
 //Instagram
 define('CLIENT_ID','');
+
 define('CLIENT_SECRET','');
 
 if(!isset($_GET["task"])) die;
