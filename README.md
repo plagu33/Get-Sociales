@@ -1,8 +1,3 @@
-Get-Sociales
-============
-
-<?php  
-
 //hashtag
 define("HASHTAG","petertest");
 
@@ -94,5 +89,3 @@ function file_get_contents_curl($url) {
 
 	return $data;
 }
-
-?>
