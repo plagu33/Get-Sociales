@@ -1,3 +1,5 @@
+<?php
+
 //hashtag
 define("HASHTAG","petertest");
 
