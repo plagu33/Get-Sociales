@@ -1,14 +1,7 @@
 <?php  
-include('libraries/config.php');
+include('libraries/config.php');      
 
-if(!isset($_GET["task"])) die;
-$task = $_GET["task"];
-
-switch ($task){
-    case 'getsociales':
-        getSociales();        
-    break;       
-}
+getSociales();
 
 function getSociales(){
 
